@@ -52,7 +52,7 @@ const theme = extendTheme({
                 color: 'grayishBlue',
                 fontWeight: 600,
                 fontSize: {
-                    sm: '14px',
+                    sm: '13px',
                     lg: '15px'
             }
         },
