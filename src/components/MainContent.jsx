@@ -1,7 +1,8 @@
-import { Flex,  Container,  Center } from '@chakra-ui/react';
-import PriceSlider from './PriceSlider';
+import { Flex,  Container,  Center, Button } from '@chakra-ui/react';
+import PriceSlider from './MainContentItems/PriceSlider';
 import { useState } from 'react';
-import SwitchContainer from './SwitchContainer';
+import SwitchContainer from './MainContentItems/SwitchContainer';
+import CheckList from './MainContentItems/CheckList';
 
 const MainContent = () => {
   const [value, setValue] = useState(16);
@@ -28,8 +29,9 @@ const MainContent = () => {
         </Flex>
       </Center>
       <SwitchContainer />
-      
-    </Container>
+      <CheckList />
+      <Button fontSize="12px" fontWeight="800" borderRadius="28.5px" color="paleBlue" backgroundColor="darkDesaturatedBlue" px="35px" py="20px">Start my trial</Button>    
+      </Container>
   );
 };
 

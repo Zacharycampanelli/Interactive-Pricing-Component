@@ -1,6 +1,6 @@
 import {  Slider, SliderTrack, SliderFilledTrack, SliderThumb, SliderMark, Box } from '@chakra-ui/react';
 
-import SliderIcon from '../assets/images/icon-slider.svg';
+import SliderIcon from '../../assets/images/icon-slider.svg';
 import { useState } from 'react';
 
 const pricingMonthly = [
