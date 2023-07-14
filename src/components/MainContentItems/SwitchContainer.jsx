@@ -2,7 +2,7 @@ import { Box, Center, Flex, FormLabel, Switch } from '@chakra-ui/react';
 
 const SwitchContainer = () => {
   return (
-    <Center>
+    <Center  ml="5px">
       <Flex width="80%" justifyContent="space-around">
         <FormLabel htmlFor="monthly">
           <p>Monthly Billing</p>

@@ -1,7 +1,7 @@
 import {  Slider, SliderTrack, SliderFilledTrack, SliderThumb, SliderMark, Box } from '@chakra-ui/react';
 
 import SliderIcon from '../../assets/images/icon-slider.svg';
-import { useState } from 'react';
+
 
 const pricingMonthly = [
   {
@@ -27,32 +27,40 @@ const pricingMonthly = [
 ]
 
 
-const PriceSlider = ({value, setValue}) => {
+const PriceSlider = ({value, setValue, viewers, setViewers}) => {
   // const [value, setValue] = useState(16)
 
 
   const handleChange = (e) => {
     if (e === 20 || e === 28 || e === 32) {
+      console.log(e, value)
       e = value;
     }
 
     setValue(e);
     console.log(value)
-  }
+    changeViewers(e)
+    
+}
 
+const changeViewers = price => {
+  let views = "";
+   pricingMonthly.forEach(rate => {
+        if(rate.price === price) {
+          console.log(rate.views)
+          views = rate.views;
+        }
+      });
+
+      setViewers(views)
+    }
 
 
   return (
     <div>
       <Slider aria-label="slider-ex-1" min={8} max={36} onChange={handleChange} step={4}> 
-        {/* <SliderMark value={pricingMonthly[0].price} />
-        <SliderMark value={pricingMonthly[1].price} />
-        <SliderMark value={pricingMonthly[2].price} />
-        <SliderMark value={pricingMonthly[3].price} />
-        <SliderMark value={pricingMonthly[4].price} /> */}
 
         <SliderTrack bg="lightGrayishBlue">
-        {/* <Box position='relative' right={10} /> */}
           <SliderFilledTrack bg="strongCyan" />
         </SliderTrack >
         <SliderThumb boxSize={10} bg="strongCyan">

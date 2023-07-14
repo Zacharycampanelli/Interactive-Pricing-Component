@@ -6,6 +6,7 @@ import CheckList from './MainContentItems/CheckList';
 
 const MainContent = () => {
   const [value, setValue] = useState(16);
+  const [viewers, setViewers] = useState("100K");
   return (
     <Container
       backgroundColor="white"
@@ -18,10 +19,11 @@ const MainContent = () => {
       right="0"
       zIndex="2"
       p="6"
+      pt="8"
       textAlign="center"
     >
-      <h3>100K PAGEVIEWS</h3>
-      <PriceSlider value={value} setValue={setValue} />
+      <h3>{viewers} PAGEVIEWS</h3>
+      <PriceSlider value={value} setValue={setValue} viewers={viewers} setViewers={setViewers} />
       <Center>
         <Flex alignItems="center" w="30%" justifyContent="space-around">
           <h1>${value}.00</h1>
