@@ -3,7 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
     colors: {
         softCyan: '#A4F3EB',
-        strongCyan: '#ECF0FB',
+        strongCyan: '#10D5C2',
         lightGrayishRed: '#FEEDE8',
         lightRed: '#FF8D68',
         paleBlue: '#BECDFF',
@@ -43,6 +43,7 @@ const theme = extendTheme({
             h3: {
                 color: 'grayishBlue',
                 fontWeight: 800,
+                letterSpacing: '1.7px',
                 fontSize: {
                     sm: '12px',
                     lg: '14px'
