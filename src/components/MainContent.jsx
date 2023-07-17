@@ -10,21 +10,22 @@ const MainContent = () => {
   return (
     <Container
       backgroundColor="white"
-      w="85vw"
-      minH="65%"
+      w={{sm: "85vw", lg: "100vw"}}
+      h="65vh"
       boxShadow="lg"
       pos="absolute"
-      top="40%"
+      top="17rem"
       left="0"
       right="0"
       zIndex="2"
       p="6"
       pt="8"
       textAlign="center"
-    >
+    > <Flex flexDirection="column" height="100%" justifyContent="space-around" alignItems="center">
+
       <h3>{viewers} PAGEVIEWS</h3>
       <PriceSlider value={value} setValue={setValue} viewers={viewers} setViewers={setViewers} />
-      <Center>
+      <Center mt="-15px">
         <Flex alignItems="center" w="30%" justifyContent="space-around">
           <h1>${value}.00</h1>
           <h4>/month</h4>
@@ -32,7 +33,8 @@ const MainContent = () => {
       </Center>
       <SwitchContainer />
       <CheckList />
-      <Button fontSize="12px" fontWeight="800" borderRadius="28.5px" color="paleBlue" backgroundColor="darkDesaturatedBlue" px="35px" py="20px">Start my trial</Button>    
+      <Button fontSize="12px" fontWeight="800" borderRadius="28.5px" color="paleBlue" backgroundColor="darkDesaturatedBlue" px="35px" py="20px" w="50%" ml="0" mr="0" >Start my trial</Button>    
+    </Flex>
       </Container>
   );
 };

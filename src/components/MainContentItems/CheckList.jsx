@@ -3,19 +3,19 @@ import Check from '../../assets/images/icon-check.svg'
 const CheckList = () => {
   return (
     <List>
-        <ListItem>
+        <ListItem my="5px">
         <p>
         <ListIcon as={Check} />
             Unlimited websites
             </p>
         </ListItem>
-        <ListItem>
+        <ListItem my="4px">
         <p>
         <ListIcon as={Check} />
             100% data ownership
             </p>
         </ListItem>
-        <ListItem>
+        <ListItem my="4px">
         <p>
         <ListIcon as={Check} />
             Email reports

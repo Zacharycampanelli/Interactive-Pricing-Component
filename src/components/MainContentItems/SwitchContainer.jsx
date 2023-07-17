@@ -2,12 +2,12 @@ import { Box, Center, Flex, FormLabel, Switch } from '@chakra-ui/react';
 
 const SwitchContainer = () => {
   return (
-    <Center  ml="5px">
-      <Flex width="80%" justifyContent="space-around">
+    <Center  ml="12px">
+      <Flex width="100%" justifyContent="space-around">
         <FormLabel htmlFor="monthly">
           <p>Monthly Billing</p>
         </FormLabel>
-        <Switch onChange="" />
+        <Switch onChange="" px="3px"/>
         <FormLabel htmlFor="yearly">
           <p>Yearly Billing</p>
         </FormLabel>
@@ -19,6 +19,7 @@ const SwitchContainer = () => {
         px="8px"
         py="2px"
         mb="6px"
+        mr="-10px"
         fontSize="10px"
         fontWeight="800"
       >
