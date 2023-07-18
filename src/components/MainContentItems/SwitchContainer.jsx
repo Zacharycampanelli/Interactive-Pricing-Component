@@ -1,13 +1,23 @@
 import { Box, Center, Flex, FormLabel, Switch } from '@chakra-ui/react';
 
-const SwitchContainer = () => {
+const SwitchContainer = ({frequency, setFrequency}) => {
+
+  const handleFrequency = () => {
+    if(frequency === 'monthly') {
+      setFrequency('yearly')
+    }
+    else {
+      setFrequency('monthly')
+    }
+  }
+
   return (
     <Center  ml="12px">
       <Flex width="100%" justifyContent="space-around">
         <FormLabel htmlFor="monthly">
           <p>Monthly Billing</p>
         </FormLabel>
-        <Switch onChange="" px="3px"/>
+        <Switch onChange={handleFrequency} px="3px"/>
         <FormLabel htmlFor="yearly">
           <p>Yearly Billing</p>
         </FormLabel>

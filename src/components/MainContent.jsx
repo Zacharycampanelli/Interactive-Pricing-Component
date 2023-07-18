@@ -7,6 +7,18 @@ import CheckList from './MainContentItems/CheckList';
 const MainContent = () => {
   const [value, setValue] = useState(16);
   const [viewers, setViewers] = useState("100K");
+  const [frequency, setFrequency] = useState('monthly');
+  
+  const annualConvert = (num) => {
+    if (frequency === 'yearly'){
+      let newnum = num * 12;
+      newnum *= .75;
+      return newnum
+    }
+    return num;
+  
+  }
+
   return (
     <Container
       backgroundColor="white"
@@ -27,11 +39,11 @@ const MainContent = () => {
       <PriceSlider value={value} setValue={setValue} viewers={viewers} setViewers={setViewers} />
       <Center mt="-15px">
         <Flex alignItems="center" w="30%" justifyContent="space-around">
-          <h1>${value}.00</h1>
+          <h1>${annualConvert(value)}.00</h1>
           <h4>/month</h4>
         </Flex>
       </Center>
-      <SwitchContainer />
+      <SwitchContainer frequency={frequency} setFrequency={setFrequency} />
       <CheckList />
       <Button fontSize="12px" fontWeight="800" borderRadius="28.5px" color="paleBlue" backgroundColor="darkDesaturatedBlue" px="35px" py="20px" w="50%" ml="0" mr="0" >Start my trial</Button>    
     </Flex>
