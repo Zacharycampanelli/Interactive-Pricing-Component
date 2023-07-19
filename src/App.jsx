@@ -6,7 +6,7 @@ function App() {
   return (
   <>
     <Container pos="relative" backgroundColor="veryPaleBlue" h="120vh" overflowX={{sm: "hidden", lg:"visible"}} >
-      <Box h="50vh" pos="relative" zIndex="2" >
+      <Box h="50vh" pos="relative" zIndex="2" w={{lg: "40rem" }}>
         <Header />
       </Box>
       <MainContent />

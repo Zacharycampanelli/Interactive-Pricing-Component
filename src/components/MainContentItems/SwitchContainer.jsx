@@ -1,5 +1,5 @@
 import { Box, Center, Flex, FormLabel, Switch } from '@chakra-ui/react';
-
+import MediaQuery from 'react-responsive';
 const SwitchContainer = ({frequency, setFrequency}) => {
 
   const handleFrequency = () => {
@@ -12,7 +12,7 @@ const SwitchContainer = ({frequency, setFrequency}) => {
   }
 
   return (
-    <Center  ml="12px">
+    <Center  ml="12px" mt="10px" >
       <Flex width="100%" justifyContent="space-around">
         <FormLabel htmlFor="monthly">
           <p>Monthly Billing</p>
@@ -24,6 +24,8 @@ const SwitchContainer = ({frequency, setFrequency}) => {
       </Flex>
       <Box
         borderRadius="9.5px"
+        position={{lg: "absolute"}}
+        right={{lg: "110"}}
         color="lightRed"
         background="lightGrayishRed"
         px="8px"
@@ -32,8 +34,12 @@ const SwitchContainer = ({frequency, setFrequency}) => {
         mr="-10px"
         fontSize="10px"
         fontWeight="800"
+        w={{lg: "15%"}}
       >
         -25%
+        <MediaQuery minWidth="1440px">
+          {' '} discount
+        </MediaQuery>
       </Box>
     </Center>
   );

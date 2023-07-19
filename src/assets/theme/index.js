@@ -30,6 +30,9 @@ const theme = extendTheme({
                 fontSize: {
                     sm: '32px',
                     lg: '40px'
+                },
+                marginRight: {
+                    lg: "-10rem"
                 }
             },
             h2: {
@@ -55,7 +58,8 @@ const theme = extendTheme({
                 fontSize: {
                     sm: '13px',
                     lg: '15px'
-            }
+            },
+            display: 'inline'
         },
             p: { 
                 color: 'grayishBlue',
