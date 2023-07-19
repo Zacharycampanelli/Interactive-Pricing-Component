@@ -17,7 +17,7 @@ const SwitchContainer = ({frequency, setFrequency}) => {
         <FormLabel htmlFor="monthly">
           <p>Monthly Billing</p>
         </FormLabel>
-        <Switch onChange={handleFrequency} px="3px"/>
+        <Switch onChange={handleFrequency} px="3px" _hover={{color: 'cyan'}} />
         <FormLabel htmlFor="yearly">
           <p>Yearly Billing</p>
         </FormLabel>
