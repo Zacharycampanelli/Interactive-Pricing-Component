@@ -4,13 +4,15 @@ import Background from './components/Background';
 import MainContent from './components/MainContent';
 function App() {
   return (
-    <Container pos="relative" backgroundColor="veryPaleBlue" h="120vh" w="100vw" sx={{ sm: {overflowX: "hidden"}}}>
-      <MainContent pos="relative"  />
-      <Box h="50vh" pos="relative" zIndex="1">
-        <Background />
+  <>
+    <Container pos="relative" backgroundColor="veryPaleBlue" h="120vh" overflowX={{sm: "hidden", lg:"visible"}} >
+      <Box h="50vh" pos="relative" zIndex="2" >
         <Header />
       </Box>
+      <MainContent />
+        <Background />
     </Container>
+  </>
   );
 }
 
