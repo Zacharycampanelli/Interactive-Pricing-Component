@@ -4,6 +4,7 @@ const theme = extendTheme({
     colors: {
         softCyan: '#A4F3EB',
         strongCyan: '#10D5C2',
+        cyan: '#7AEADF',
         lightGrayishRed: '#FEEDE8',
         lightRed: '#FF8D68',
         paleBlue: '#BECDFF',
@@ -13,6 +14,7 @@ const theme = extendTheme({
         lightGrayishBlue2: '#CFD8EF',
         grayishBlue: '#848EAD',
         darkDesaturatedBlue: '#293356' ,
+
 
     },
     breakpoints: {

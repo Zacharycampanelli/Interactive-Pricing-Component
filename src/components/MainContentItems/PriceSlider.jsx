@@ -62,7 +62,7 @@ const changeViewers = price => {
         <SliderTrack bg="lightGrayishBlue">
           <SliderFilledTrack bg="strongCyan" />
         </SliderTrack >
-        <SliderThumb boxSize={10} bg="strongCyan" _hover={{ boxShadow: "0 10px 30px 0 #80FFF3"}}>
+        <SliderThumb boxSize={10} bg="strongCyan" draggable onDrag={{ cursor: 'grab' }} _hover={{ boxShadow: "0 10px 30px 0 cyan", bg: "cyan"}}>
           <Box  as={SliderIcon} >
             <SliderIcon/>
           </Box>
