@@ -1,25 +1,25 @@
-import { List, ListIcon, ListItem } from '@chakra-ui/react';
+import { List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import Check from '../../assets/images/icon-check.svg';
 const CheckList = () => {
   return (
     <List textAlign={{ lg: 'left' }}>
       <ListItem my="8px">
-        <p>
+        <Text fontSize="12px" fontWeight="600" color="grayishBlue">
           <ListIcon as={Check} />
           Unlimited websites
-        </p>
+        </Text>
       </ListItem>
       <ListItem my="8px">
-        <p>
+        <Text fontSize="12px" fontWeight="600" color="grayishBlue">
           <ListIcon as={Check} />
           100% data ownership
-        </p>
+        </Text>
       </ListItem>
       <ListItem my="8px">
-        <p>
+        <Text fontSize="12px" fontWeight="600" color="grayishBlue">
           <ListIcon as={Check} />
           Email reports
-        </p>
+        </Text>
       </ListItem>
     </List>
   );

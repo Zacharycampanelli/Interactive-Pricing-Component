@@ -2,6 +2,16 @@ import { extendTheme } from "@chakra-ui/react";
 import { switchTheme } from "./switch";
 const theme = extendTheme({
     components: { Switch: switchTheme },
+    fontSizes: {
+        xs: '12px',
+        sm: '13px',
+        md: '14px',
+        lg: '15px',
+        xl: '20px',
+        '2xl' : '28px',
+        '3xl' : '32px',
+        '4xl' : '40px',
+    },
     colors: {
         softCyan: '#A4F3EB',
         strongCyan: '#10D5C2',
@@ -27,49 +37,6 @@ const theme = extendTheme({
     },
     styles: {
         global: {
-            h1: {
-                color: 'darkDesaturatedBlue',
-                fontWeight: 800,
-                fontSize: {
-                    sm: '32px',
-                    lg: '40px'
-                },
-                marginRight: {
-                    lg: "-10rem"
-                }
-            },
-            h2: {
-                color: 'darkDesaturatedBlue',
-                fontWeight: 800,
-                fontSize: {
-                    sm: '20px',
-                    lg: '28px'
-                }
-            },
-            h3: {
-                color: 'grayishBlue',
-                fontWeight: 800,
-                letterSpacing: '1.7px',
-                fontSize: {
-                    sm: '12px',
-                    lg: '14px'
-                }
-            },
-            h4: {
-                color: 'grayishBlue',
-                fontWeight: 600,
-                fontSize: {
-                    sm: '13px',
-                    lg: '15px'
-            },
-            display: 'inline'
-        },
-            p: { 
-                color: 'grayishBlue',
-                fontWeight: 600,
-                fontSize: '12px'
-            },
-
             body: {
                 bg: {
                     sm: 'white',

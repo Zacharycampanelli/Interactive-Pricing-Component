@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import Circles from '../assets/images/pattern-circles.svg';
 
 const Header = () => {
@@ -7,9 +7,9 @@ const Header = () => {
       <Box pos="absolute">
         <Circles />
       </Box>
-      <h2>Simple, traffic-based pricing</h2>
+      <Text fontSize={{sm: 'xl', lg: '2xl'}} fontWeight="800" color="darkDesaturatedBlue">Simple, traffic-based pricing</Text>
       <Box w={{sm: "50%", lg: "60%"}} mt="10px" textAlign="center" lineHeight="1.75">
-        <h4>Sign-up for our 30-day trial. No credit card required. </h4>
+        <Text fontSize={{sm: 'sm', lg: 'lg'}} fontWeight="600" color="grayishBlue">Sign-up for our 30-day trial. No credit card required. </Text>
       </Box>
     </Flex>
   );
