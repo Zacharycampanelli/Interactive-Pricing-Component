@@ -3,8 +3,8 @@ import Circles from '../assets/images/pattern-circles.svg';
 
 const Header = () => {
   return (
-    <Flex pos="relative" flexDirection="column" alignItems="center" justifyContent="center" h="21rem" w="">
-      <Box pos="absolute">
+    <Flex pos="relative" flexDirection="column" alignItems="center" justifyContent="center" h="16rem" mr={{lg: "43px"}} w={{lg: "43vw"}}>
+      <Box pos="absolute" top="3rem">
         <Circles />
       </Box>
       <Text fontSize={{sm: 'xl', lg: '2xl'}} fontWeight="800" color="darkDesaturatedBlue">Simple, traffic-based pricing</Text>

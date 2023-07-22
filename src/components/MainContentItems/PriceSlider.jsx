@@ -58,8 +58,8 @@ const changeViewers = price => {
 
   return (
 
-      <Slider aria-label="slider-ex-1" min={8} max={36} onChange={handleChange} step={4} mt="-10px"> 
-        <SliderTrack bg="lightGrayishBlue">
+      <Slider aria-label="slider-ex-1" min={8} max={36} onChange={handleChange} step={4} mt={{sm:"-10px", lg: "-10px"}}> 
+        <SliderTrack bg="lightGrayishBlue" h="8px">
           <SliderFilledTrack bg="strongCyan" />
         </SliderTrack >
         <SliderThumb boxSize={10} bg="strongCyan"  _hover={{ boxShadow: "0 10px 30px 0 cyan", bg: "cyan"}}>

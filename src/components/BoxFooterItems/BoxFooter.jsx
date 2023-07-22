@@ -1,5 +1,5 @@
 import { Flex, Button } from '@chakra-ui/react';
-import CheckList from './BoxFooterItems/CheckList';
+import CheckList from './CheckList';
 
 const BoxFooter = () => {
   return (
@@ -20,9 +20,10 @@ const BoxFooter = () => {
         backgroundColor="darkDesaturatedBlue"
         px="35px"
         py="20px"
-        w={{ sm: '50%', lg: '35%' }}
+        w={{ sm: '60%', lg: '35%' }}
         ml="0"
         mr="0"
+        mt={{ sm: '20px', lg: '35px' }}
         _hover={{ color: 'white' }}
       >
         Start my trial
